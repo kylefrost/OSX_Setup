@@ -1,0 +1,46 @@
+#!/bin/bash
+
+############################################################################
+#
+# Copyright (c) 2013 - Kyle Frost (frostincredible@gmail.com)
+#
+# This setup script is 100% free.  This script file is intended for personal
+# and/or educational use only.         It may not be duplicated for monetary
+# benefit  or  any other purpose  without  the permission  of the developer.
+#
+############################################################################
+
+
+version=$1
+
+while :
+do
+
+  clear
+
+  echo
+  echo "          ---Pick which ROM you wish to set up for---"
+  echo
+  echo
+  echo "  1 - AOKP"
+  echo "  2 - CM"
+  echo
+  echo "  0 - Cancel"
+  echo
+  echo -n "Enter option: "
+  read opt
+
+  if [ "$?" != "1" ]
+  then
+    case $opt in
+      1) scripts/folder_names/AOKP; exit 1;; 
+      2) scripts/folder_names/CM; exit 1;;  
+      0) exit 1;;
+      *) echo "Invalid option"; continue;;
+    esac
+  fi
+
+  scripts/press_enter
+
+done
+

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+############################################################################
+#
+# Copyright (c) 2013 - Kyle Frost (frostincredible@gmail.com)
+#
+# This setup script is 100% free.  This script file is intended for personal
+# and/or educational use only.         It may not be duplicated for monetary
+# benefit  or  any other purpose  without  the permission  of the developer.
+#
+############################################################################
+
+PATH=/Volumes/Android/bin:$PATH
+echo
+curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > /Volumes/Android/bin/repo
+echo
+chmod a+x /Volumes/Android/bin/repo
+echo
+cd AOKP 
+echo
+repo init -u https://github.com/AOKP/platform_manifest.git -b jb-mr1
+echo
+
