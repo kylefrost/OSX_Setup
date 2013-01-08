@@ -16,7 +16,7 @@ curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > /Volumes/Android/
 echo
 chmod a+x /Volumes/Android/bin/repo
 echo
-cd AOKP 
+cd /Volumes/Android/AOKP/ 
 echo
 repo init -u https://github.com/AOKP/platform_manifest.git -b jb-mr1
 echo

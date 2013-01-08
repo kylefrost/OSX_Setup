@@ -16,7 +16,7 @@ curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > /Volumes/Android/
 echo
 chmod a+x /Volumes/Android/bin/repo
 echo
-cd CM
+cd /Volumes/Android/CM/
 echo
 repo init -u git://github.com/CyanogenMod/android.git -b cm-10.1
 echo
